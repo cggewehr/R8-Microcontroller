@@ -1,0 +1,30 @@
+///////////////////////////     BASIC    ///////////////////////////
+
+net "clock"          loc = V10;   // 100 MHz board clock
+net "reset"          loc = T5;    // Asynchronous reset (Switch 7, left-most)
+net "uart_tx"        loc = N18;   // Serial transmitter 
+net "uart_rx"        loc = N17;   // Serial receiver
+net "prog_mode"      loc = T10;   // Processor mode selector (Programming RAM or executing code on RAM)
+
+///////////////////////////     INPUT    ///////////////////////////
+
+net "port_io_uC[14]" loc = A8;  // BUTTON UP
+net "port_io_uC[15]" loc = C9;  // BUTTON DOWN
+
+///////////////////////////     OUTPUT   ///////////////////////////
+
+net "port_io_uC[7]"  loc = T17; // Segment A
+net "port_io_uC[6]"  loc = T18; // Segment B
+net "port_io_uC[5]"  loc = U17; // Segment C
+net "port_io_uC[4]"  loc = U18; // Segment D
+net "port_io_uC[3]"  loc = M14; // Segment E
+net "port_io_uC[2]"  loc = N14; // Segment F
+net "port_io_uC[1]"  loc = L14; // Segment G
+net "port_io_uC[0]"  loc = M13; // Segment P
+
+net "port_io_uC[12]" loc = P17; // Display 3 (Left-most) 
+net "port_io_uC[11]" loc = P18; // Display 2
+net "port_io_uC[10]" loc = N15; // Display 1
+net "port_io_uC[9]"  loc = N16; // Display 0 (Right-most)
+
+////////////////////////////////////////////////////////////////////
